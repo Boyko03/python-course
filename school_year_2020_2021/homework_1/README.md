@@ -80,7 +80,7 @@ complex_filter(logs, {"status": "success", "countryISO2": "NZ"})
 => [{'timestamp': '2020-05-11T13:44:30', 'status': 'success', 'countryISO2': 'NZ'}]
 
 # Да вземем само съобщенията, които имат status = "error" И countryISO2 = "UK"
-complex_filter(logs, {"status": "success", "countryISO2": "NZ"})
+complex_filter(logs, {"status": "error", "countryISO2": "UK"})
 => []
 
 # Да вземем само съобщенията, които имат status = "error"
